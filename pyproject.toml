@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "d0x1286-agentapp_jd458"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别Agent 应用开发工程师·多轮工具链的失败定位上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "d0x1286" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://d0x1286.github.io"
+Repository = "https://github.com/d0x1286/agentapp_jd458"
+Issues = "https://github.com/d0x1286/agentapp_jd458/issues"
+
+[project.scripts]
+agentapp_jd458 = "agentapp_jd458:main"
+
+[tool.setuptools]
+py-modules = ["agentapp_jd458"]
